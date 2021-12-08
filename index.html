@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+      <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+      <script src="https://d3js.org/topojson.v1.min.js"></script>
+      <script src="https://unpkg.com/d3-simple-slider"></script>
+
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="style.css">
+      
+  </head>
+
+  <body>
+    <!-- <h2>Bubble Chart</h2> -->
+    
+    <!-- <script src="bubble_chart.js"></script> -->
+    <div class="column" style="background-color:#FFF;">
+      <h2>Olympic Index</h2>
+      <!-- <svg width=50% height=50%></svg> Step 2 -->
+
+      <script src="bubble_chart.js"></script>
+
+      <div class="chart_plot">
+        <svg viewBox="-250 -90 1550 750" id="svg" class="bubble_chart"></svg>
+      </div>
+
+
+
+      <div class="slider_div">
+        
+        <div class="time_val">
+          <p id="value-time"></p>
+        </div>
+
+        <div class="time_slider">
+          <div id="slider-time"></div>
+        </div>
+
+      </div>
+
+
+      
+
+      
+    </div>
+
+    <div class="column2" style="background-color:#FFF">
+      <h2>Details</h2>
+      <p id="demo"></p>
+      <br>
+
+      <svg viewBox="-300 -10 1000 1000" id="svg2"></svg>
+      
+    </div>
+  </body>
+</html>
